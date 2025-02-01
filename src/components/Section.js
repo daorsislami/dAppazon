@@ -4,6 +4,9 @@ import { ethers } from 'ethers'
 import Rating from './Rating'
 
 const Section = ({ title, items, togglePop }) => {
+
+    console.log('Items inside Section component: ', items);
+
     return (
         <div className='cards__section'>
             <h3 id={title}>{title}</h3>
